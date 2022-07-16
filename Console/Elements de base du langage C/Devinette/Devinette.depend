@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1467304876 source:c:\users\harry\documents\projets\devinette\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1467304876 source:c:\users\harry\documents\projets\elements de base du langage c\devinette\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1484947085 source:c:\users\harry\documents\projets\console\elements de base du langage c\devinette\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

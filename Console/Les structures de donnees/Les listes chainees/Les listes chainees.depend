@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1473863372 source:c:\users\harry\documents\projets\console\les structures de donnees\les listes chainees\main.c
+	<stdio.h>
+	<stdlib.h>
+	"liste_chainnee.h"
+
+1472235891 c:\users\harry\documents\projets\console\les structures de donnees\les listes chainees\liste_chainnee.h
+
+1473863217 source:c:\users\harry\documents\projets\console\les structures de donnees\les listes chainees\liste_chainne.c
+	<stdio.h>
+	<stdlib.h>
+	"liste_chainnee.h"
+

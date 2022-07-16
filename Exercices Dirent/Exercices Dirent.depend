@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1475171747 source:c:\users\harry\documents\projets\exercices dirent\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<errno.h>
+	<dirent.h>
+	<sys/types.h>
+

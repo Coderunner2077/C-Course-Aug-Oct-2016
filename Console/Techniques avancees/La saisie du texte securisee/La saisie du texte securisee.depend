@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1468796855 source:c:\users\harry\documents\projets\techniques avancees\la saisie du texte securisee\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1479779417 source:c:\users\harry\documents\projets\console\techniques avancees\la saisie du texte securisee\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

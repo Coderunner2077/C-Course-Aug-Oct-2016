@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1467412679 source:c:\users\harry\documents\projets\pointeurs\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1468691566 source:c:\users\harry\documents\projets\console\techniques avancees\pointeurs\main.c
+	<stdio.h>
+	<stdlib.h>
+

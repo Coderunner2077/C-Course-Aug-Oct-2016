@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1468777336 source:c:\users\harry\documents\projets\techniques avancees\lire et ecrire dans des fichiers\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1536877931 source:c:\users\harry\documents\projets\console\techniques avancees\lire et ecrire dans des fichiers\main.c
+	<stdio.h>
+	<stdlib.h>
+	<liste_chainnee.h>
+

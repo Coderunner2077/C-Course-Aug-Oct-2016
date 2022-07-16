@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1469547604 source:c:\users\harry\documents\projets\sdl\tableaux 2d\main.c
+	<stdio.h>
+	<stdlib.h>
+

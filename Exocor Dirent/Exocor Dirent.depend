@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1475169433 source:c:\users\harry\documents\projets\exocor dirent\main.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<dirent.h>
+	<sys/types.h>
+

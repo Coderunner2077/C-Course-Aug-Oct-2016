@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1474054361 source:c:\users\harry\documents\projets\console\les structures de donnees\tables de hachage\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

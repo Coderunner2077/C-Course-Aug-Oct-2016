@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1467550074 source:c:\users\harry\documents\projets\fonctions\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1467905050 source:c:\users\harry\documents\projets\elements de base du langage c\fonctions\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1467907422 source:c:\users\harry\documents\projets\console\elements de base du langage c\fonctions\main.c
+	<stdio.h>
+	<stdlib.h>
+

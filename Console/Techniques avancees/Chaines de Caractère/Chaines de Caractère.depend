@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1467662310 source:c:\users\harry\documents\projets\chaines de caractère\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1467911515 source:c:\users\harry\documents\projets\techniques avancees\chaines de caractère\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1536684581 source:c:\users\harry\documents\projets\console\techniques avancees\chaines de caractère\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

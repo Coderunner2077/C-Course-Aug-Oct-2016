@@ -1,0 +1,110 @@
+#ifdef __cplusplus
+    #include <cstdlib>
+#else
+    #include <stdlib.h>
+#endif
+
+#include <SDL/SDL.h>
+
+void pause();
+
+int main ( int argc, char** argv )
+{
+    if(SDL_Init(SDL_INIT_VIDEO)==-1)// DEMARRAGE DE LA SDL (ici: CHARGEMENT DU SYSTEME VIDEO). SI ERREUR
+    {
+        fprintf(stderr, "ERREUR D'INITIALISATION DE LA SDL: %s\n", SDL_GetError());// ECRITURE DE L'ERREUR
+        //stderr est définie par stdio.h et pointe vers un endroit où l'erreur peut être écrite. Généralement sous Windows, ce sera un fichier stderr.txt
+        exit(EXIT_FAILURE);// ON QUITTE LE PROGRAMME
+    }
+    //SDL_Init RENVOIE 0 SI OK ET -1 SI !OK
+    /*
+    SDL_Init PREND UN PAREMETRE : JE DOIS INDIQUER QUELLE(S) PARTIE(S) DE LA SDL JE SOUHAITE CHARGER.
+    DES CONSTANTES SONT DONC MISES A DISPOSITION.
+    VOICI LA LISTE ==>
+        - SDL_INIT_VIDEO
+        - SDL_INIT_AUDIO
+        - SDL_INIT_CDROM : CHARGE LE SYS CD-ROM. PERMET DE MANIPULER LE LECTEUR CD-ROM
+        - SDL_INIT_JOYSTICK : CHARGE LE SYS DE GESTION DE JOYSTICK
+        - SDL_INIT_EVERYTHING : CHARGE TOUS LES SYS LISTES CI-DESSUS SIMULTANEMENT
+
+    SI J'EN AI BESOIN QUE DE CERTAINS SYS (PAS TOUS) ==> LES CONSTANTES DOIVENT ETRE SEPAREES PAR
+     UN "|" EN CAS DE CHARGEMENT DE PLUSIEURS PARTIES
+     EXEMPLE : SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO);
+
+    */
+
+    SDL_SetVideoMode(640, 480, 32, SDL_HWSURFACE);// SDL_HWSURFACE : DONNEES CHARGEES DANS MEMOIRE VIDEO. SDL_SWSURFACE ==> RAM
+
+    /*
+    SDL_SetVideoMode(largeur fenetre en px, hauteur en px, nb couleurs, des flags)
+    COMME POUR SDL_Init, ON DOIT UTILISER  DES FLAGS POUR DEFINIR DES OPTIONS (flags=options)
+    ==> Les flags de SDL_SetVideoMode :
+
+            - SDL_HWSURFACE : DONNEES CHARGEES DANS MA CARTE 3D. + RAPIDE. MAIS MOINS DE MEMOIRE
+            - SDL_SWSURFACE : DONNEES CHARGEES DANS LA MEMOIRE SYS (RAM).+ DE MEMOIRE. - RAPIDE
+            - SDL_RESIZABLE : FENETRE SERA REDIMENSIONNABLE. PAR DEFAUT ELLE NE L'EST PAS
+            - SDL_NOFRAME : FENETRE SANS BARRE DE TITRE, NI DE BORDURE
+            - SDL_FULLSCREEN : MODE PLEIN ECRAN (EN CHANGEANT AUTOMATIQUEMENT LA RESOLUTION DE CELUI-ci
+                                AU BESOIN). AUCUNE FENETRE N'EST OUVERTE DANS CE MODE
+            - SDL_DOUBLEBUF: MODE DOUBLE BUFFERING. C'EST UNE TECHNIQUE TRES UTILISEE DANS LES JEUX 2D,
+                    ET QUI PERMET DE FAIRE EN SORTE QUE LES DEPLACEMENTS DES OBJETS A L'ECRAN SOIENT FLUIDES
+
+    */
+    SDL_WM_SetCaption("Ma super funetre SDL", NULL);// LE 2ND PARAMETRE : TITRE DE L'ICONE. PARAMETRE ININTERESSANT MAIS INCONTOURNABLE EN C, MALHEUREUSEMENT
+    SDL_Surface *ecran=NULL; // SDL_Surface : UNE STRUCTURE CREEE PAR LA SDL. POINTEUR AFIN QUE ==> ALLOCATION DYNAMIQUE EN FCT DE LA TAILLE DE LA FENETRE
+    ecran=SDL_SetVideoMode(640, 480, 32, SDL_HWSURFACE);
+   // EN FAIT, SDL_SetVideoMode RENVOIE UNE VALEUR, i.e. UN POINTEUR SUR LA SURFACE DE L'ECRAN QU'ELLE A CREEE EN MEMOIRE POUR NOUS
+    //REMARQUE : SDL_SetVideoMode NE MARCHE QUE POUR L'ECRAN (SURFACE GLOBALE)
+    if(ecran==NULL)
+    {
+        fprintf(stderr, "\nImpossible de charger le mode video : %s \n", SDL_GetError());//SDL_GetError SERA TRES INSTRUCTIF AU CAS OU
+        exit(EXIT_FAILURE);
+    }
+
+    Uint32 bleuVert = SDL_MapRGB(ecran->format, 17, 127, 127); //Uint32 : type de longueur 32 bits (8 bit=1 octet) SUR TOUT OS.
+    //ecran->format : INDIQUE LE FORMAT DE COULEUR. CELUI-CI DEPEND DU NB DE bits / pixels QUE J'AI DEMANDE AVEC SDL_SetVideoMode
+   //SYSTEME RGB(RED, GREEN, BLUE) POUR TOUTE COULEUR SUR PC : VALEURS DE 0 A 255;
+    SDL_FillRect(ecran, NULL, bleuVert); // 2D P : PARTIE DE LA SURFACE QUI DOIT ETRE REMPLIE. NULL ==> REMPLIR TOUTE LA SURFACE
+    //1ER P: POINTEUR SUR LA SURFACE DANS LAQUELLE JE VEUX DESSINER
+
+    SDL_Surface *rectangle=NULL;
+    rectangle = SDL_CreateRGBSurface(SDL_HWSURFACE, 220, 180, 32, 0, 0, 0, 0);//(ZONE DE CHARGEMENT, largeur, hauteur, nb color)
+
+    SDL_FillRect(rectangle, NULL, SDL_MapRGB(ecran->format, 255, 255, 255));
+    //IL FAUT MAINTENANT BLITTER NOTRE RECTANGLE SUR L'ECRAN, i.e. COLLER...
+    SDL_Rect position; //SDL_Rect : STRUCTURE QUI CONTIENT BCP DE SOUS-VBLES DONT DEUX QUI M'INTERESSENT (x,y)
+
+
+    position.x=(640/2)-(220/2);// POUR PLACER AU CENTRE: (420, 300) (ON DEDUIT LA TAILE DU RECTANGLE POUR QU'IL S'AFFICHE TOTMT
+    position.y=(480/2) - (180/2);
+
+    SDL_BlitSurface(rectangle, NULL, ecran, &position);//(OK,PARTIE DE LA SURFACE A COLLER ==> TOUT DONC NULL, OK, PNTR SUR UNE VRBL INDIQUANT POSITION DE LA SURFACE A COLLER)
+
+
+
+    SDL_Flip(ecran);//METTRE A JOUR L'ECRAN
+
+    pause();
+    SDL_FreeSurface(rectangle);// MEM DE SURFACE ECRAN EST LIBEREE AUTOMT AVEC SDL_Quit
+
+    SDL_Quit(); //ARRET DE LA SDL. JE LIBERE LA MEMOIRE. A NE JAMAIS OUBLIER!!
+    return EXIT_SUCCESS;// EXIT_FAILURE ET EXIT_SUCCESS : CONSTANTES AFIN QUE LE CODE S'ADAPTE A TOUT OS EN CAS DE BESOIN
+}
+//
+void pause()
+{
+    int continuer=1;
+    SDL_Event event;
+
+    while(continuer)
+    {
+        SDL_WaitEvent(&event);
+        switch(event.type)
+        {
+            case SDL_QUIT:
+                continuer = 0;
+
+        }
+
+    }
+}

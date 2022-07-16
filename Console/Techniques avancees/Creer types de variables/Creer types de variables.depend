@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1467840492 source:c:\users\harry\documents\projets\creer types de variables\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Structures_Enumerations.h"
+
+1467839174 c:\users\harry\documents\projets\creer types de variables\structures_enumerations.h
+
+1468329200 source:c:\users\harry\documents\projets\techniques avancees\creer types de variables\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Structures_Enumerations.h"
+
+1467847991 c:\users\harry\documents\projets\techniques avancees\creer types de variables\structures_enumerations.h
+
+1468329200 source:c:\users\harry\documents\projets\console\techniques avancees\creer types de variables\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Structures_Enumerations.h"
+
+1468762269 c:\users\harry\documents\projets\console\techniques avancees\creer types de variables\structures_enumerations.h
+

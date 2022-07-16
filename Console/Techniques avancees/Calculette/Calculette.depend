@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1469228811 source:c:\users\harry\documents\projets\techniques avancees\calculette\main.c
+	"fonctions.h"
+
+1469228821 c:\users\harry\documents\projets\techniques avancees\calculette\fonctions.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1469228384 source:c:\users\harry\documents\projets\techniques avancees\calculette\fonctions.c
+	"fonctions.h"
+
+1469228384 source:c:\users\harry\documents\projets\console\techniques avancees\calculette\fonctions.c
+	"fonctions.h"
+
+1469228821 c:\users\harry\documents\projets\console\techniques avancees\calculette\fonctions.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1469811388 source:c:\users\harry\documents\projets\console\techniques avancees\calculette\main.c
+	"fonctions.h"
+

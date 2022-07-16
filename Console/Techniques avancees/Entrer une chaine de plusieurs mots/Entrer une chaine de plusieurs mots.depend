@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1468623720 source:c:\users\harry\documents\projets\techniques avancees\entrer une chaine de plusieurs mots\main.c
+	<stdio.h>
+	<stdlib.h>
+

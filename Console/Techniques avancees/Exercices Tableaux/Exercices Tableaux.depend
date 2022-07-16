@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1467509428 source:c:\users\harry\documents\projets\exercices tableaux\main.c
+	<stdio.h>
+	<stdlib.h>
+	"tableaux.h"
+
+1467501677 c:\users\harry\documents\projets\exercices tableaux\tableaux.h
+
+1467503523 c:\users\harry\documents\projets\exercices tableaux\tableaux.c
+
+1467566556 source:c:\users\harry\documents\projets\exercices tableaux\tableaux.c
+
+1467566556 source:c:\users\harry\documents\projets\elements de base du langage c\exercices tableaux\tableaux.c
+
+1467566772 source:c:\users\harry\documents\projets\techniques avancees\exercices tableaux\main.c
+	<stdio.h>
+	<stdlib.h>
+	"tableaux.h"
+
+1467501677 c:\users\harry\documents\projets\techniques avancees\exercices tableaux\tableaux.h
+
+1467566556 source:c:\users\harry\documents\projets\techniques avancees\exercices tableaux\tableaux.c
+

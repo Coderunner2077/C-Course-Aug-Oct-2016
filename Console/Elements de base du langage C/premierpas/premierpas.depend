@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1467126064 source:c:\users\harry\documents\projets\premierpas\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1513983462 source:c:\users\harry\documents\projets\console\elements de base du langage c\premierpas\main.c
+	<stdio.h>
+	<stdlib.h>
+

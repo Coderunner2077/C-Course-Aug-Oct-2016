@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1467565271 source:c:\users\harry\documents\projets\tableaux\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1467565549 source:c:\users\harry\documents\projets\techniques avancees\tableaux\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1479767132 source:c:\users\harry\documents\projets\console\techniques avancees\tableaux\main.c
+	<stdio.h>
+	<stdlib.h>
+

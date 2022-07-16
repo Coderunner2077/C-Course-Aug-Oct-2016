@@ -1,0 +1,52 @@
+# depslib dependency file v1.0
+1468073097 source:c:\users\harry\documents\projets\techniques avancees\pendu\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fonctions_et_autres.h"
+
+1468073073 c:\users\harry\documents\projets\techniques avancees\pendu\fonctions_et_autres.h
+	<ctype.h>
+	<string.h>
+
+1468468194 source:c:\users\harry\documents\projets\techniques avancees\variante\pendu\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fonctions_et_autres.h"
+	"dico.h"
+
+1468493771 c:\users\harry\documents\projets\techniques avancees\variante\pendu\fonctions_et_autres.h
+	<ctype.h>
+	<string.h>
+	<time.h>
+
+1468496206 source:c:\users\harry\documents\projets\techniques avancees\variante\pendu\dico.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"dico.h"
+	"fonctions_et_autres.h"
+
+1468467072 c:\users\harry\documents\projets\techniques avancees\variante\pendu\dico.h
+
+1468496206 source:c:\users\harry\documents\projets\console\techniques avancees\variante\pendu\dico.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"dico.h"
+	"fonctions_et_autres.h"
+
+1468467072 c:\users\harry\documents\projets\console\techniques avancees\variante\pendu\dico.h
+
+1468493771 c:\users\harry\documents\projets\console\techniques avancees\variante\pendu\fonctions_et_autres.h
+	<ctype.h>
+	<string.h>
+	<time.h>
+
+1474936899 source:c:\users\harry\documents\projets\console\techniques avancees\variante\pendu\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fonctions_et_autres.h"
+	"dico.h"
+

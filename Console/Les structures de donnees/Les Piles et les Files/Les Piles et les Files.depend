@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1472400180 source:c:\users\harry\documents\projets\console\les structures de donnees\les piles et les files\files.c
+	<stdio.h>
+	<stdlib.h>
+	"files.h"
+
+1472400179 c:\users\harry\documents\projets\console\les structures de donnees\les piles et les files\files.h
+	"piles.h"
+
+1472399573 c:\users\harry\documents\projets\console\les structures de donnees\les piles et les files\piles.h
+
+1472399573 source:c:\users\harry\documents\projets\console\les structures de donnees\les piles et les files\piles.c
+	<stdio.h>
+	<stdlib.h>
+	"piles.h"
+
+1472399661 source:c:\users\harry\documents\projets\console\les structures de donnees\les piles et les files\main.c
+	<stdio.h>
+	<stdlib.h>
+	"piles.h"
+	"files.h"
+

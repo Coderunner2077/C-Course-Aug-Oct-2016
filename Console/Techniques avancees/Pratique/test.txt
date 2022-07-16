@@ -1,0 +1,6 @@
+ABF
+
+
+Ceci est un texte ecrit au biais de la fonction fputs du langage C.
+
+Ceci est un texte ecrit au biais de la fonction fprintf du langage C.

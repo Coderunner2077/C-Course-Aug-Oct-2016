@@ -1,0 +1,79 @@
+# depslib dependency file v1.0
+1468622333 source:c:\users\harry\documents\projets\techniques avancees\pendu\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fonctions_et_autres.h"
+	"dico.h"
+
+1468622051 c:\users\harry\documents\projets\techniques avancees\pendu\fonctions_et_autres.h
+	<ctype.h>
+	<string.h>
+
+1468622579 source:c:\users\harry\documents\projets\techniques avancees\pendu\fonctions.c
+	"fonctions_et_autres.h"
+	<stdio.h>
+
+1468500554 c:\users\harry\documents\projets\techniques avancees\pendu\dico.h
+	<time.h>
+
+1468501278 source:c:\users\harry\documents\projets\techniques avancees\pendu\dico.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions_et_autres.h"
+	"dico.h"
+
+1468696029 source:c:\users\harry\documents\projets\techniques avancees\pendu final\dico.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions_et_autres.h"
+	"dico.h"
+	<time.h>
+
+1468690225 c:\users\harry\documents\projets\techniques avancees\pendu final\fonctions_et_autres.h
+	<ctype.h>
+	<string.h>
+
+1468500554 c:\users\harry\documents\projets\techniques avancees\pendu final\dico.h
+	<time.h>
+
+1468690281 source:c:\users\harry\documents\projets\techniques avancees\pendu final\fonctions.c
+	"fonctions_et_autres.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1468696029 source:c:\users\harry\documents\projets\techniques avancees\pendu final\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fonctions_et_autres.h"
+	"dico.h"
+
+1474932151 source:c:\users\harry\documents\projets\console\techniques avancees\pendu final\dico.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions_et_autres.h"
+	"dico.h"
+	<time.h>
+
+1468686625 c:\users\harry\documents\projets\console\techniques avancees\pendu final\fonctions_et_autres.h
+	<ctype.h>
+	<string.h>
+
+1468496954 c:\users\harry\documents\projets\console\techniques avancees\pendu final\dico.h
+	<time.h>
+
+1474934837 source:c:\users\harry\documents\projets\console\techniques avancees\pendu final\fonctions.c
+	"fonctions_et_autres.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1474931807 source:c:\users\harry\documents\projets\console\techniques avancees\pendu final\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fonctions_et_autres.h"
+	"dico.h"
+

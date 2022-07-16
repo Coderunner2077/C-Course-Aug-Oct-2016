@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1467242247 source:c:\users\harry\documents\projets\calculatrice\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1467242247 source:c:\users\harry\documents\projets\console\elements de base du langage c\maths & calculatrice\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1467561136 source:c:\users\harry\documents\projets\boucles\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1533400396 source:c:\users\harry\documents\projets\console\elements de base du langage c\boucles\main.c
+	<stdio.h>
+	<stdlib.h>
+
